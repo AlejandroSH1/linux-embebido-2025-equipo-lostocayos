@@ -1,0 +1,10 @@
+main_app:
+  title: "Los Tocayos App 1.0"
+  width: 1200
+  height: 800
+
+style:
+  font_family: "Arial"
+  font_size: 18
+  font_color: "#FFFFFF" # Color en formato hexadecimal
+  background_color: "#000000"

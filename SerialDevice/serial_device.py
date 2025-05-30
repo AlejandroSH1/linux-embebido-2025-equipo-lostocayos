@@ -6,7 +6,7 @@ import time
 import serial
 #Lastly local modules
 
-BAUDRATE = [
+BAUDRATES = [
     4800,
     9600,
     38400,
@@ -18,7 +18,7 @@ BAUDRATE = [
 
 class SerialDevice:
     def __init__(self, port:str, baudrate:int):
-        if baudrate not in BAUDRATE:
+        if baudrate not in BAUDRATES:
             raise ValueError(f"Not a valid baudrate {baudrate}")
         if port not in self.find_available_serial_ports():
             raise ValueError(f"Not a valid port {port}")
